@@ -8,10 +8,8 @@ public class BuildingsDamage : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("123");
         if (other.gameObject.tag == "Bullet")
         {
-            Debug.Log("456");
             Instantiate(building, transform.position, transform.rotation);
             Destroy(other.gameObject);
             Destroy(gameObject);

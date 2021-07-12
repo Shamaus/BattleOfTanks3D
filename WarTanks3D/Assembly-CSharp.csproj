@@ -65,6 +65,7 @@
     <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\VariableJoystick.cs" />
     <Compile Include="Assets\Scripts\BuildingsDamage.cs" />
     <Compile Include="Assets\Scripts\Bullet.cs" />
+    <Compile Include="Assets\Scripts\DestroyObstacle.cs" />
     <Compile Include="Assets\Scripts\EnemyTankMechnics.cs" />
     <Compile Include="Assets\Scripts\ExplosionsTank.cs" />
     <Compile Include="Assets\Scripts\PlayerMechanics.cs" />

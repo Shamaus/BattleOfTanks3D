@@ -12033,7 +12033,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce435294eb4205747953b9581224f3ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  building: {fileID: 6898578417775493024, guid: 7b8165aa9e545fc4bacfe1bfbbf70d01,
+  building: {fileID: 8369900164202019028, guid: 7b8165aa9e545fc4bacfe1bfbbf70d01,
     type: 3}
 --- !u!65 &6621597489613239403
 BoxCollider:
