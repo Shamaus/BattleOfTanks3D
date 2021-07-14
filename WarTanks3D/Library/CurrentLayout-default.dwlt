@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 678, y: 492}
   m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
-  controlID: 63
+  controlID: 34
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -219,7 +219,7 @@ MonoBehaviour:
   m_MinSize: {x: 402, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 64
+  controlID: 35
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -244,7 +244,7 @@ MonoBehaviour:
   m_MinSize: {x: 402, y: 221}
   m_MaxSize: {x: 8002, y: 4021}
   vertical: 0
-  controlID: 65
+  controlID: 36
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -338,20 +338,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Models
+    - Assets/Prefabs
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Models
+  - Assets/Prefabs
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\Projects unity\BattleOfTanks3D\WarTanks3D
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 79}
-    m_SelectedIDs: 8a490000
-    m_LastClickedID: 18826
-    m_ExpandedIDs: 00000000624900006449000066490000684900006a490000864900008a4900009249000000ca9a3b
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: cc4d0000
+    m_LastClickedID: 19916
+    m_ExpandedIDs: 00000000824d0000844d0000864d0000884d00008a4d000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -379,7 +379,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000624900006449000066490000684900006a490000
+    m_ExpandedIDs: 00000000824d0000844d0000864d0000884d00008a4d0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -502,9 +502,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: b0ccfdffc8ccfdff84cdfdff7ce7fdff90bafeffe4e5ffffe6e5ffffe8e5ffff66fbffffec340000
+      m_SelectedIDs: 0a350000
+      m_LastClickedID: 13578
+      m_ExpandedIDs: c6b6ffff30bbffff48d2ffff66fbffffc8340000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -564,9 +564,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 15.582348, y: 0.9634638, z: 3.8437653}
+    m_Target: {x: 9.765786, y: 10.653336, z: -0.9134121}
     speed: 2
-    m_Value: {x: 15.582348, y: 0.9634638, z: 3.8437653}
+    m_Value: {x: 9.765786, y: 10.653336, z: -0.9134121}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -612,17 +612,17 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.64299005, y: -0.003453491, z: 0.0028865272, w: 0.76587266}
+    m_Target: {x: 0.35725355, y: 0.018211506, z: -0.0069673224, w: 0.93380487}
     speed: 2
-    m_Value: {x: 0.64298445, y: -0.003453461, z: 0.002886502, w: 0.765866}
+    m_Value: {x: 0.35725325, y: 0.018211491, z: -0.006967317, w: 0.9338041}
   m_Size:
-    m_Target: 12.204207
+    m_Target: 5.0390286
     speed: 2
-    m_Value: 12.204207
+    m_Value: 5.0390286
   m_Ortho:
-    m_Target: 1
+    m_Target: 0
     speed: 2
-    m_Value: 1
+    m_Value: 0
   m_CameraSettings:
     m_Speed: 1
     m_SpeedNormalized: 0.5

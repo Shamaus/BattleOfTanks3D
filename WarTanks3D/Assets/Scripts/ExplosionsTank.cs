@@ -22,8 +22,7 @@ public class ExplosionsTank : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("123");
-        if (other.gameObject.tag == "Bullet")
+        if ((gameObject.tag == "Player" && other.gameObject.tag == "BulletEnemy") || (gameObject.tag == "Enemy" && other.gameObject.tag == "Bullet"))
         {
             Instantiate(explosions, transform.position, transform.rotation);
             Destroy(other.gameObject);

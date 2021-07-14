@@ -9,7 +9,7 @@ public class DestroyObstacle : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Tank")
+        if (other.gameObject.tag == "Enemy" || other.gameObject.tag == "Player")
         {
             if (obstacleMain) Instantiate(obstacleMain, transform.position, transform.rotation);
             if (obstacleSec) Instantiate(obstacleSec, transform.position, obstacleSec.transform.rotation);
