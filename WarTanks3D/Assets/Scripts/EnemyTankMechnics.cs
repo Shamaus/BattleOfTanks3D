@@ -14,7 +14,7 @@ public class EnemyTankMechnics : MonoBehaviour
     private Vector3 vectorMove; // Напрвление движение персонажа
 
     // Ссылки на компоненты
-    private CharacterController ch_controller;
+    public CharacterController ch_controller;
     public GameObject bullet;
 
     void Start()
@@ -63,5 +63,6 @@ public class EnemyTankMechnics : MonoBehaviour
     {
         Instantiate(bullet, shotPoint.position, shotPoint.rotation);
     }
+
 }
 

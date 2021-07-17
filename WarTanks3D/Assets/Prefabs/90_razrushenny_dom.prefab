@@ -644,6 +644,7 @@ GameObject:
   - component: {fileID: 2479347239281086357}
   - component: {fileID: 2479347239281086356}
   - component: {fileID: 2479347239281086359}
+  - component: {fileID: -4362838947004027972}
   m_Layer: 0
   m_Name: 90_razrushenny_dom
   m_TagString: Untagged
@@ -748,7 +749,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce435294eb4205747953b9581224f3ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  building: {fileID: 1181548858143728, guid: 3db9e95faad829f4b953f712b1811fc5, type: 3}
+  building: {fileID: 8019885757916956634, guid: 4a0013e8ac0cef04693d72e62efad558,
+    type: 3}
+--- !u!208 &-4362838947004027972
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2479347239281086358}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.265, y: 2.015, z: 2.23}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: -2.16, y: 0.86, z: 0}
+  m_TimeToStationary: 0.1
 --- !u!1 &2676654888137441443
 GameObject:
   m_ObjectHideFlags: 0

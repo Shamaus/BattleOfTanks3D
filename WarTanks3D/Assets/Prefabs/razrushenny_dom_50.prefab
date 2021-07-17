@@ -486,6 +486,7 @@ GameObject:
   - component: {fileID: 8369900164202019035}
   - component: {fileID: 8369900164202019034}
   - component: {fileID: 8369900164202019029}
+  - component: {fileID: 4737601591768219842}
   m_Layer: 0
   m_Name: razrushenny_dom_50
   m_TagString: Untagged
@@ -665,6 +666,22 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!208 &4737601591768219842
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8369900164202019028}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.265, y: 2.015, z: 2.23}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: -2.16, y: 0.86, z: 0}
+  m_TimeToStationary: 0.1
 --- !u!1 &8369900164211641962
 GameObject:
   m_ObjectHideFlags: 0

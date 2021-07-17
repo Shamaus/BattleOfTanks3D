@@ -1,0 +1,38 @@
+# Blender MTL File: 'None'
+# Material Count: 3
+
+newmtl material0
+Ns 179.999996
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+map_Bump D:\\Projects unity\\BattleOfTanks3D\\WarTanks3D\\Assets\\Models\\heap-of-construction-debris-bricks\\source\\bricks-heap_normal.jpg
+map_Kd D:\\Projects unity\\BattleOfTanks3D\\WarTanks3D\\Assets\\Models\\heap-of-construction-debris-bricks\\source\\bricks-heap.jpg
+
+newmtl material1
+Ns 179.999996
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+map_Bump D:\\Projects unity\\BattleOfTanks3D\\WarTanks3D\\Assets\\Models\\heap-of-construction-debris-bricks\\source\\bricks-heap_normal1.jpg
+map_Kd D:\\Projects unity\\BattleOfTanks3D\\WarTanks3D\\Assets\\Models\\heap-of-construction-debris-bricks\\source\\bricks-heap1.jpg
+
+newmtl material2
+Ns 179.999996
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+map_Bump D:\\Projects unity\\BattleOfTanks3D\\WarTanks3D\\Assets\\Models\\heap-of-construction-debris-bricks\\source\\bricks-heap_normal2.jpg
+map_Kd D:\\Projects unity\\BattleOfTanks3D\\WarTanks3D\\Assets\\Models\\heap-of-construction-debris-bricks\\source\\bricks-heap2.jpg

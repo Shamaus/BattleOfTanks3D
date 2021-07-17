@@ -8,7 +8,7 @@ public class BuildingsDamage : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Bullet")
+        if (other.gameObject.tag == "Bullet" || other.gameObject.tag == "BulletEnemy")
         {
             Instantiate(building, transform.position, transform.rotation);
             Destroy(other.gameObject);

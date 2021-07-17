@@ -13,11 +13,7 @@ public class ExplosionsTank : MonoBehaviour
     
     void Update()
     {
-        if (Input.GetKey("space"))
-        {
-            
-            Destroy(gameObject);
-        }
+
     }
 
     private void OnTriggerEnter(Collider other)
