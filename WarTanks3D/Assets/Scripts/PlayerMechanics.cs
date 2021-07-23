@@ -17,6 +17,9 @@ public class PlayerMechanics : MonoBehaviour
     // Ссылки на компоненты
     private CharacterController ch_controller;
     public GameObject bullet;
+    // Время для задержки выстрела
+    private float nextTime = 0.0f;
+    private float timeRate = 2f;
 
     void Start()
     {
@@ -57,6 +60,10 @@ public class PlayerMechanics : MonoBehaviour
 
     public void shot()
     {
-        Instantiate(bullet, shotPoint.position, shotPoint.rotation);
+        if ((Time.time > nextTime) && gameObject.activeSelf)
+        {
+            Instantiate(bullet, shotPoint.position, shotPoint.rotation);
+            nextTime = Time.time + timeRate;
+        }
     }
 }

@@ -71,6 +71,7 @@
      <Compile Include="Assets\Scripts\PlayerMechanics.cs" />
      <Compile Include="Assets\Scripts\TestScript.cs" />
      <Compile Include="Assets\Scripts\UI_Controller.cs" />
+     <Compile Include="Assets\Scripts\UI_script.cs" />
      <Compile Include="Assets\True Explosions\System\Scripts\effects\PseudoVolumetricExplosion.cs" />
      <Compile Include="Assets\True Explosions\System\Scripts\effects\exploderComponents\ExploderComponent.cs" />
      <Compile Include="Assets\True Explosions\System\Scripts\effects\exploderComponents\LightComponent.cs" />
@@ -82,6 +83,7 @@
      <Compile Include="Assets\True Explosions\System\Scripts\exploders\Exploder2D.cs" />
      <Compile Include="Assets\True Explosions\System\Scripts\exploders\SphereExploder.cs" />
      <None Include="Assets\True Explosions\System\Shaders\SphereVolumetricExplosion.shader" />
+     <None Include="Assets\Fonts\fms_metadata.xml" />
  <Reference Include="UnityEngine">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.28f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>
@@ -633,6 +635,9 @@
  </Reference>
  <Reference Include="UnityEditor.UI">
  <HintPath>D:/Projects unity/BattleOfTanks3D/WarTanks3D/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.2D.Sprite.Editor">
+ <HintPath>D:/Projects unity/BattleOfTanks3D/WarTanks3D/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>

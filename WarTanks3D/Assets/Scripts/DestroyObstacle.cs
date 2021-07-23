@@ -15,7 +15,7 @@ public class DestroyObstacle : MonoBehaviour
             if (obstacleSec) Instantiate(obstacleSec, transform.position, obstacleSec.transform.rotation);
             Destroy(gameObject);
         }
-        if (other.gameObject.tag == "Bullet")
+        if (other.gameObject.tag == "Bullet" || other.gameObject.tag == "BulletEnemy")
         {
             if (obstacleMain) Instantiate(obstacleMain, transform.position, transform.rotation);
             if (obstacleSec) Instantiate(obstacleSec, transform.position, obstacleSec.transform.rotation);

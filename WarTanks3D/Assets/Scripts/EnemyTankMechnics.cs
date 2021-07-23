@@ -17,9 +17,9 @@ public class EnemyTankMechnics : MonoBehaviour
     public CharacterController ch_controller;
     public GameObject bullet;
 
-    void Start()
+    /*void Start()
     {
-        ch_controller = GetComponent<CharacterController>();
+        //ch_controller = GetComponent<CharacterController>();
     }
 
     void Update()
@@ -58,7 +58,7 @@ public class EnemyTankMechnics : MonoBehaviour
         if (!ch_controller.isGrounded) gravityForce -= 20f * Time.deltaTime;
         else gravityForce = -1f;
     }
-
+    */
     public void shot()
     {
         Instantiate(bullet, shotPoint.position, shotPoint.rotation);
