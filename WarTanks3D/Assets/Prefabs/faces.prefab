@@ -107,7 +107,7 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2779528631218421156}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
@@ -125,7 +125,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25eb951844f39054cb02bb9ffd13de57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obstacleMain: {fileID: 0}
+  obstacleMain: {fileID: 6661338838193670570, guid: 2213f7db10e618246a4d930faa3c0835,
+    type: 3}
   obstacleSec: {fileID: 0}
 --- !u!208 &2704724913223935939
 NavMeshObstacle:

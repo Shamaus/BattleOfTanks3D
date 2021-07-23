@@ -29,7 +29,7 @@ public class AI_Enemy : MonoBehaviour
     {
         EnemyTank = FindObjectOfType<EnemyTankMechnics>();
         agent = GetComponent<NavMeshAgent>();
-        agent.updateRotation = false;
+        agent.updateRotation = true;
         rotationSpeed = agent.angularSpeed;
         agentTransform = agent.transform;
     }
@@ -43,7 +43,7 @@ public class AI_Enemy : MonoBehaviour
             if ((distanceToPlayer <= detectionDistance) || IsInView())
             {
                 MoveToTarget(targetPlayer);
-                RotateToTarget(targetPlayer);
+                //RotateToTarget(targetPlayer);
             }
         }
        if (targetBase)
@@ -79,8 +79,7 @@ public class AI_Enemy : MonoBehaviour
 
     private void MoveToTarget(Transform target)
     {
-        agent.SetDestination(target.position);
-        agent.Equals
+        if (target) agent.SetDestination(target.position);
         //EnemyTank.ch_controller.Move((enemyEye.position - EnemyTank.transform.position) * Time.deltaTime);
     }
     
