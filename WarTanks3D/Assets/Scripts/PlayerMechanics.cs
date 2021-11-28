@@ -8,7 +8,6 @@ public class PlayerMechanics : MonoBehaviour
     // Основные параметры
     public float speedMove;
     public Joystick joystick;
-    public Transform shotPoint;
 
     // Параметры геймплейя
     private float gravityForce;
@@ -16,10 +15,6 @@ public class PlayerMechanics : MonoBehaviour
 
     // Ссылки на компоненты
     private CharacterController ch_controller;
-    public GameObject bullet;
-    // Время для задержки выстрела
-    private float nextTime = 0.0f;
-    private float timeRate = 2f;
 
     void Start()
     {
@@ -40,7 +35,7 @@ public class PlayerMechanics : MonoBehaviour
         vectorMove.x = joystick.Horizontal * speedMove;
         vectorMove.z = joystick.Vertical * speedMove;
 
-        // Планый поворот при ходьбе
+        // Планый поворот 
         if (Vector3.Angle(Vector3.forward, vectorMove) > 1f || Vector3.Angle(Vector3.forward, vectorMove) == 0)
         {
             Vector3 direct = Vector3.RotateTowards(transform.forward, vectorMove, speedMove, 0.0f);
@@ -54,16 +49,9 @@ public class PlayerMechanics : MonoBehaviour
 
     void GamingGravity()
     {
-        if (!ch_controller.isGrounded) gravityForce -= 20f * Time.deltaTime;
-        else gravityForce = -1f;
-    }
-
-    public void shot()
-    {
-        if ((Time.time > nextTime) && gameObject.activeSelf)
-        {
-            Instantiate(bullet, shotPoint.position, shotPoint.rotation);
-            nextTime = Time.time + timeRate;
-        }
+        if (!ch_controller.isGrounded) 
+            gravityForce -= 20f * Time.deltaTime;
+        else 
+            gravityForce = -1f;
     }
 }

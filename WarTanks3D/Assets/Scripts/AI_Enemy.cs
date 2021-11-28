@@ -17,11 +17,6 @@ public class AI_Enemy : MonoBehaviour
     private float rotationSpeed;
     private Transform agentTransform;
 
-
-    EnemyTankMechnics EnemyTank;
-    private float nextTime = 0.0f;
-    private float timeRate = 2f;
-
     public Transform targetPoint;
     public Transform targetPoint2;
     public Transform targetPoint3;
@@ -30,7 +25,6 @@ public class AI_Enemy : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        EnemyTank = FindObjectOfType<EnemyTankMechnics>();
         agent = GetComponent<NavMeshAgent>();
         agent.updateRotation = true;
         rotationSpeed = agent.angularSpeed;
@@ -41,21 +35,7 @@ public class AI_Enemy : MonoBehaviour
     void Update()
     {
         MoveToTarget(targetPoint);
-        /*if (targetBase)
-        {
-            MoveToTarget(targetBase);
-        }
-        if (targetPlayer)
-        {
-            float distanceToPlayer = Vector3.Distance(targetPlayer.transform.position, agent.transform.position);
-            if ((distanceToPlayer <= detectionDistance) || IsInView())
-            {
-                MoveToTarget(targetPlayer);
-                //RotateToTarget(targetPlayer);
-            }
-        }
-       */
-        drawView();
+        //DrawView();
     }
 
 
@@ -75,7 +55,6 @@ public class AI_Enemy : MonoBehaviour
 
     private void MoveToTarget(Transform target)
     {
-        
         float distanceToPlayer = 1000;
         float distanceToTargetPoint = 1000;
         if (targetPlayer != null) 
@@ -100,7 +79,7 @@ public class AI_Enemy : MonoBehaviour
         else if ((targetPlayer != null) && (IsInView(targetPlayer) || (distanceToPlayer <= detectionDistance)))
         {
             RotateToTarget(targetPlayer);
-            agent.SetDestination(targetPlayer.position);
+            //agent.SetDestination(targetPlayer.position);
         }
         else if ((targetBase != null) && ((IsInView(targetPoint2) || IsInView(targetPoint3)) || (distanceToTargetPoint <= detectionDistance)))
         {
@@ -117,35 +96,24 @@ public class AI_Enemy : MonoBehaviour
 
         }
         else if (targetBase != null) agent.SetDestination(target.position);
-        //EnemyTank.ch_controller.Move((enemyEye.position - EnemyTank.transform.position) * Time.deltaTime);
     }
     
     private void RotateToTarget(Transform target)
     {
+        agent.SetDestination(gameObject.transform.position);
         Vector3 lookVector = target.position - agentTransform.position;
         lookVector.y = 0;
+        gameObject.GetComponent<TankMechnics>().Shot();
         if (lookVector == Vector3.zero)
-        {
-            if (Time.time > nextTime)
-            {
-                EnemyTank.shot();
-                nextTime = Time.time + timeRate;
-            }
             return;
-        }
-        if (Time.time > nextTime)
-        {
-            EnemyTank.shot();
-            nextTime = Time.time + timeRate;
-        }
         agentTransform.rotation = Quaternion.RotateTowards(
             agentTransform.rotation, 
             Quaternion.LookRotation(lookVector,Vector3.up), 
             rotationSpeed * Time.deltaTime
             );
-        
     }
-    private void drawView()
+
+    private void DrawView()
     {
         Vector3 left = enemyEye.position + Quaternion.Euler(new Vector3(0, viewAngle / 2f, 0)) * (enemyEye.forward * viewDistance);
         Vector3 right = enemyEye.position + Quaternion.Euler(-new Vector3(0, viewAngle / 2f, 0)) * (enemyEye.forward * viewDistance);

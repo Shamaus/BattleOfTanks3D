@@ -5,32 +5,48 @@ using UnityEngine.SceneManagement;
 
 public class UI_Controller : MonoBehaviour
 {
-    public GameObject player;
-    public GameObject shtab;
-
-    public GameObject enemy1;
-    public GameObject enemy2;
-    public GameObject enemy3;
-
     public GameObject win;
     public GameObject lose;
 
+    private int numTanks;
+    GameObject[] tanks;
+
     private void Start()
     {
+        tanks = GameObject.FindGameObjectsWithTag("Enemy");
+        numTanks = 0;
+        foreach (GameObject tank in tanks)
+        {
+            tank.SetActive(false);
+        }
+        if (tanks.Length > 0)
+            tanks[numTanks].SetActive(true);
         Time.timeScale = 1;
     }
-    void Update()
+
+    public void DestroyEnemy()
     {
-        if (!enemy1 && !enemy2 && !enemy3)
+        if (numTanks + 1 == tanks.Length)
         {
-            win.SetActive(true);
-            Time.timeScale = 0;
+            WinLevel();
         }
-        if (!player || !shtab)
+        else
         {
-            lose.SetActive(true);
-            Time.timeScale = 0;
+            numTanks++;
+            tanks[numTanks].SetActive(true);
         }
+    }
+
+    public void LoseLevel()
+    {
+        lose.SetActive(true);
+        //Time.timeScale = 0;
+    }
+
+    void WinLevel()
+    {
+        win.SetActive(true);
+        Time.timeScale = 0;
     }
 
     public void RestartLevel()

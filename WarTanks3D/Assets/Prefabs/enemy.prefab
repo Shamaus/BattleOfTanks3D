@@ -1322,13 +1322,12 @@ GameObject:
   - component: {fileID: 6156346632208048619}
   - component: {fileID: 6156346632208048616}
   - component: {fileID: 6156346632208048617}
-  - component: {fileID: 6156346632208048622}
   - component: {fileID: 6156346632208048623}
   - component: {fileID: 6156346632208048620}
   - component: {fileID: 6156346632208048610}
   - component: {fileID: 6156346632208048621}
   m_Layer: 0
-  m_Name: enemy
+  m_Name: Enemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1410,19 +1409,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.59, y: 1.94, z: 4.06}
   m_Center: {x: -0.58, y: 0.66, z: 0.33}
---- !u!114 &6156346632208048622
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6156346632208048611}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 58a37a8cf1d37d243a86d41aee10acf7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  explosions: {fileID: 100000, guid: 5d028565f79e270408884b995abc06ef, type: 3}
 --- !u!54 &6156346632208048623
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1451,10 +1437,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7248407362a28c48ad155e84d14fe08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speedMove: 1
   shotPoint: {fileID: 6156346631060926243}
-  ch_controller: {fileID: 0}
   bullet: {fileID: 2514212020718455489, guid: ae45706cf6fcf814db641fb39dc763cb, type: 3}
+  explosions: {fileID: 100000, guid: 5d028565f79e270408884b995abc06ef, type: 3}
 --- !u!114 &6156346632208048610
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1475,6 +1460,9 @@ MonoBehaviour:
     type: 3}
   targetBase: {fileID: 6922338501955412734, guid: 2be457bdd625cb54f8da7120b10f4db2,
     type: 3}
+  targetPoint: {fileID: 0}
+  targetPoint2: {fileID: 0}
+  targetPoint3: {fileID: 0}
 --- !u!195 &6156346632208048621
 NavMeshAgent:
   m_ObjectHideFlags: 0
