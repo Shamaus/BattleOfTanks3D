@@ -9,6 +9,7 @@ TagManager:
   - Enemy
   - BulletEnemy
   - Headquarters
+  - Building
   layers:
   - Default
   - TransparentFX

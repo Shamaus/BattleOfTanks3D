@@ -7,6 +7,7 @@ public class UI_Controller : MonoBehaviour
 {
     public GameObject win;
     public GameObject lose;
+    public GameObject ButtonMenu;
 
     private int numTanks;
     GameObject[] tanks;
@@ -40,17 +41,24 @@ public class UI_Controller : MonoBehaviour
     public void LoseLevel()
     {
         lose.SetActive(true);
+        ButtonMenu.SetActive(true);
         //Time.timeScale = 0;
     }
 
     void WinLevel()
     {
         win.SetActive(true);
+        ButtonMenu.SetActive(true);
         Time.timeScale = 0;
     }
 
     public void RestartLevel()
     {
         SceneManager.LoadScene(1);
+    }
+
+    public void Menu()
+    {
+        SceneManager.LoadScene(0);
     }
 }
