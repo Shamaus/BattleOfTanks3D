@@ -24,10 +24,5 @@ public class UI_script : MonoBehaviour
         CanvasMain.SetActive(true);
         CanvasPlay.SetActive(false);
     }
-    public void Level3()
-    {
-        SceneManager.LoadScene(4);
-    }
-
 
 }
