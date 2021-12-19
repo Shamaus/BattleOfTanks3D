@@ -26,15 +26,11 @@ public class UI_Controller : MonoBehaviour
 
     public void DestroyEnemy()
     {
-        if (numTanks + 1 == tanks.Length)
-        {
+        numTanks++;
+        if (numTanks == tanks.Length)
             WinLevel();
-        }
         else
-        {
-            numTanks++;
             tanks[numTanks].SetActive(true);
-        }
     }
 
     public void LoseLevel()
